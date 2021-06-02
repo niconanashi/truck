@@ -1,4 +1,4 @@
-ニコニコスネーク
+トラック
 =============
 
 [Akashic Engine](https://akashic-games.github.io/) で作られたマルチプレイゲームです。
