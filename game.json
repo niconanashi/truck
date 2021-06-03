@@ -141,8 +141,8 @@
 		},
 		"main_jewel_body": {
 			"type": "image",
-			"width": 76,
-			"height": 76,
+			"width": 96,
+			"height": 96,
 			"path": "image/MainGameScene/main_jewel_body.png"
 		},
 		"Jewel": {
