@@ -141,8 +141,8 @@
 		},
 		"main_jewel_body": {
 			"type": "image",
-			"width": 96,
-			"height": 96,
+			"width": 76,
+			"height": 76,
 			"path": "image/MainGameScene/main_jewel_body.png"
 		},
 		"Jewel": {
@@ -314,7 +314,7 @@
 		},
 		"snakeH_head_alive": {
 			"type": "image",
-			"width": 116,
+			"width": 171,
 			"height": 112,
 			"path": "image/MainGameScene/Snake/snakeH_head_alive.png"
 		},
@@ -326,7 +326,7 @@
 		},
 		"snakeH_head_gold": {
 			"type": "image",
-			"width": 116,
+			"width": 171,
 			"height": 112,
 			"path": "image/MainGameScene/Snake/snakeH_head_gold.png"
 		},
@@ -338,8 +338,8 @@
 		},
 		"snakeI_head_alive": {
 			"type": "image",
-			"width": 116,
-			"height": 112,
+			"width": 198,
+			"height": 143,
 			"path": "image/MainGameScene/Snake/snakeI_head_alive.png"
 		},
 		"snakeI_head_death": {
@@ -350,8 +350,8 @@
 		},
 		"snakeI_head_gold": {
 			"type": "image",
-			"width": 116,
-			"height": 112,
+			"width": 198,
+			"height": 143,
 			"path": "image/MainGameScene/Snake/snakeI_head_gold.png"
 		},
 		"snake_body_death": {
