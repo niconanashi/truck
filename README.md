@@ -12,23 +12,14 @@
   - シェア機能
 - 一部の文字素材がライセンスの関係で公式版と異なっています
 
-## ビルド方法
 
-TypeScriptで作られています。以下のコマンドで、このリポジトリをクローンしてビルドしてください。
-
-```
-git clone git@github.com:akashic-contents/niconicoSnake.git
-cd niconicoSnake
-npm install
-npm run build
-```
 
 ## 実行方法
 
-以下のコマンドで akashic serve が起動されます。起動後、自動的にブラウザで akashic serve のプレイ画面が開きます。
+truckフォルダのディレクトリで以下のコマンドで akashic serve が起動されます。起動後、自動的にブラウザで akashic serve のプレイ画面が開きます。
 
 ```
-npm run serve # または akashic serve --target-service nicolive
+akashic serve --target-service nicolive
 ```
 
 akashic serve 画面左上の「インスタンスを追加」ボタンを押すとブラウザのプレイ画面が新しく開き、マルチプレイで遊ぶ人数を増やすことができます。
