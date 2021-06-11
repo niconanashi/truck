@@ -76,7 +76,7 @@ var HowtoText = /** @class */ (function (_super) {
             y: 32,
             text: "あそびかた",
             font: howtoFont,
-            textColor: "silver",
+            textColor: "yellow",
             fontSize: 34,
         });
         _this.append(title);
