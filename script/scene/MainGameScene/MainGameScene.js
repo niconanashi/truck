@@ -646,7 +646,7 @@ var MainGameScene = /** @class */ (function (_super) {
             this.timeline.create(this.localParameter.dashingGaugeBar).fadeOut(200);
         }
         else if (this.localParameter.dashingGauge < this.stateManager.sessionParameter.config.snake.dashingTime * g.game.fps &&
-            this.localParameter.dashingGaugeBar.opacity === 0.0) {
+            this.localParameter.dashingGaugeBar.opacity === 1.0) {
             this.timeline.create(this.localParameter.dashingGaugeBar).fadeIn(200);
         }
         this.localParameter.dashingGaugeBar.updateGauge(this.localParameter.dashingGauge / g.game.fps);
@@ -708,7 +708,7 @@ var MainGameScene = /** @class */ (function (_super) {
         var fieldRadius = this.stateManager.sessionParameter.config.field.radius[this.localParameter.playerCountRank];
         var bg = new g.FilledRect({
             scene: this,
-            cssColor: "#001144",
+            cssColor: "#5D99FF",
             x: -fieldRadius * 2,
             y: -fieldRadius * 2,
             width: fieldRadius * 4,
@@ -873,7 +873,7 @@ var MainGameScene = /** @class */ (function (_super) {
     MainGameScene.prototype._createRankingView = function () {
         var rankingPanelAsset = this.assets.main_rank_base;
         this.localParameter.rankingPanel = new g.Sprite({
-            scene: this,
+            scene: this,hidden: true,
             width: rankingPanelAsset.width,
             height: rankingPanelAsset.height,
             y: 590,
@@ -961,12 +961,12 @@ var MainGameScene = /** @class */ (function (_super) {
         var rankingButtonOnTappedAsset = this.assets.main_btn_rank_on_diff;
         var rankingButton = new g.Sprite({
             scene: this,
-            src: rankingButtonOffAsset,
+            src: rankingButtonOnAsset,
             x: 1127,
             y: 560,
             touchable: true,
             local: true,
-            tag: ButtonState.Off
+            tag: ButtonState.On
         });
         rankingButton.onPointDown.add(function () {
             _this.stateManager.playAudioAtParamVolume(StateManager_1.AudioType.Select);
@@ -1067,7 +1067,7 @@ var MainGameScene = /** @class */ (function (_super) {
         this.localParameter.pointDownMarker = new g.Sprite({
             scene: this,
             src: baseAsset,
-            opacity: 0.5,
+            opacity: 0.0,
             anchorX: 0.5,
             anchorY: 0.5,
             hidden: true,
