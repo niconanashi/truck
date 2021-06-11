@@ -2,46 +2,46 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sessionParameter = void 0;
 exports.sessionParameter = {
-    entrySec: 10,
+    entrySec: 21,
     numPlayers: 99,
-    howtoMessage: "スネークを操作して他のスネークを倒しましょう！\n" +
-        "他のスネークのからだに頭がぶつかると死んでしまいます。\n" +
-        "えさを拾うとからだが伸びます。\n" +
-        "クリック/タップ/ドラッグ：方向転換\n" +
-        "ダブルクリック/タップ：ダッシュ",
+    howtoMessage:  "荷物をひろって トラックを長くしよう！\n" +
+        "ほかのトラックに 頭がぶつかると 死んでしまいます。\n" + 
+        "　方向転換 ： クリック、ドラッグ\n" +　　
+        "　ダッシュ ： ダブルクリック\n" +
+        "　ふっかつボタン ： 全員 10回まで",
     premiumWeight: 2.5,
     config: {
         field: {
-            radius: [1800, 1600, 1400, 1200, 1000],
-            narrowRadiusPerSec: 5,
-            bgOpacity: 0.8
+            radius: [3000, 2500, 2100, 1800, 1500],
+            narrowRadiusPerSec: 0,
+            bgOpacity: 1.0
         },
         food: {
-            interval: 10000,
-            volume: [5, 5, 5, 5, 5]
+            interval: 1700,
+            volume: [25, 20, 15, 10, 5]
         },
         snake: {
             dashingTime: 3,
             baseSpeed: 5,
             maxSpeedScale: 4,
-            amountDashingGaugeRecoveryPerFrame: 1,
-            maxNameLength: 5,
+            amountDashingGaugeRecoveryPerFrame: 10,
+            maxNameLength: 1,
             maxKnotLength: 30,
-            respawnTimes: 0,
-            premiumRespawnTimes: 1,
+            respawnTimes: 100,
+            premiumRespawnTimes: 100,
             invincibleTime: 10000
         },
         time: {
             isTimeBased: true,
-            limit: 300
+            limit: 120
         },
         userInput: {
-            pointMoveDistance: 30,
+            pointMoveDistance: 50,
             doublePointDuration: 0.1,
             radianFineness: 72
         },
         audio: {
-            audioVolume: 1.0
+            audioVolume: 0.5
         }
     }
 };
