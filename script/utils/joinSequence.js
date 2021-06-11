@@ -12,7 +12,7 @@ function startRecruitmentSequence() {
         var joinUser;
         if (error || !((_a = playerInfo === null || playerInfo === void 0 ? void 0 : playerInfo.userData) === null || _a === void 0 ? void 0 : _a.accepted)) {
             joinUser = {
-                name: "放送者",
+                name: "broadcaster",
                 id: "000000000",
                 isPremium: false
             };
@@ -43,7 +43,7 @@ function joinRequestSequence(player) {
         var joinUser;
         if (error || !((_a = playerInfo === null || playerInfo === void 0 ? void 0 : playerInfo.userData) === null || _a === void 0 ? void 0 : _a.accepted)) {
             joinUser = {
-                name: (!!player.name) ? player.name : "ゲスト",
+                name: (!!player.name) ? player.name : "niconico",
                 id: player.id,
                 isPremium: false
             };

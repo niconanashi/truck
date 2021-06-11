@@ -749,7 +749,7 @@ var StateManager = /** @class */ (function () {
         playingSnakes.forEach(function (playerId) {
             _this.playerList[playerId].lengthCount = _this.playerList[playerId].snake.words.length;
         });
-        if (playingSnakes.length <= 0) {
+        if (playingSnakes.length <= 1) {
             this.gameEndProcedure();
         }
     };
